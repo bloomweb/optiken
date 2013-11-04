@@ -1,0 +1,362 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Aqua - Responsive Drupal Theme</title>
+	
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form
+here
+. Thanks so much!">
+	<meta name="author" content="Tabvn">
+	<meta name="copyright" content="Tabvn">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2013-03-10T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#how_to_install_theme">How to install theme</a></li>
+			<li><a href="#site_settings">Site settings</a></li>
+			<li><a href="#configure_menus">Configure menus</a></li>
+			<li><a href="#configure_blocks">Configure blocks</a></li>
+			<li><a href="#configure_slider">Configure slider</a>
+				<ol>
+					<li><a href="#configure_slider_video_tutorial_enable_layer_slider_and_import_sample">Video tutorial Enable layer slider and import sample</a>
+					<li><a href="#configure_slider_video_tutorial_,_add_new_slider">Video tutorial , add new slider</a>
+				</ol>
+			</li>
+			<li><a href="#adding_blog_entry">Adding blog entry</a></li>
+			<li><a href="#add_portfolio_content">Add Portfolio content</a></li>
+			<li><a href="#questions">Questions</a></li>
+			<li><a href="#thank_you">Thank you</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Tabvn 2013<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Aqua - Responsive Drupal Theme</h1><hr><ul><li>Created: 03/10/2013</li><li>latest Update: 03/10/2013</li><li>By: Tabvn</li><li><a href="http://tabvn.com/">tabvn.com/</a></li><li>Email: <a href="mailto:&#116;&#111;&#97;&#110;&#64;&#116;&#97;&#98;&#118;&#110;&#46;&#99;&#111;&#109;">&#116;&#111;&#97;&#110;&#64;&#116;&#97;&#98;&#118;&#110;&#46;&#99;&#111;&#109;</a></li></ul><p><p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form
+<a href="http://themeforest.net/user/tabvn">here</a>
+. Thanks so much!</p></p></section>
+
+
+<section id="how_to_install_theme">
+	<h3>How to install theme</h3><hr class="notop">
+<p>
+	In the download Package, included 2 parts.</p>
+<ol>
+	<li>
+		For exitsing drupal installation</li>
+	<li>
+		For new fresh drupal installation</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p class="info">
+	<strong>If you are going to setting new drupal site, follow bellow steps:</strong></p>
+<ul>
+	<li>
+		copy source code to your site (copy all files under "For New Fresh Installation/source_code" to your server)</li>
+	<li>
+		Import <strong>data.sql</strong> to your database (use phpmyadmin)</li>
+	<li>
+		in your drupal install folder go to sites/defaut/settings.php and change configure your database
+		<pre>$databases = array ( 'default' =&gt;
+array (
+'default' =&gt;
+array (
+'database' =&gt; 'database_name', // this is your database name
+ 'username' =&gt; 'database_username',  // replace with your database username
+'password' =&gt; 'database_password',// replace with your database password
+ 'host' =&gt; 'localhost', // default is localhost, probaddy IP of mysql server
+'port' =&gt; '',
+'driver' =&gt; 'mysql',
+'prefix' =&gt; '',
+),
+), );
+              
+
+</pre>
+	</li>
+	<li>
+		Run the site and Login with administrator at http://your-site.com/user/login with username: <strong>admin</strong> password: <strong>admin</strong></li>
+	<li>
+		if the URL http://your-site.com/user/login does not work that mean you have issue with .htaccess please make sure you uploaded it, or enabled apache mode rewrite</li>
+	<li>
+		to custom blocks following this way: click on top menu navigation “Structure”-&gt;”blocks”</li>
+	<li>
+		To add more contents or edit contens following this way: from top menu navigation click “Content” *Finally go to “Configuration”-&gt;”Performance” -&gt; “Clear All Caches” Congratulation!</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p class="info">
+	<strong>If you have exitsing drupal installation please follow steps at bellow:</strong></p>
+<p>
+	<strong>Before to install the theme you need backup your site (Database + code)!</strong></p>
+<ol>
+	<li>
+		go to folder "<strong>For Exits Drupal Installation</strong>"&nbsp; (unzip download package you will see this folder)</li>
+	<li>
+		copy "aqua" under "themes" put into to your exits drupal site "sites/all/themes/"</li>
+	<li>
+		Copy "tabvn" under "modules" put into your exits drupal site "sites/all/modules/"</li>
+	<li>
+		Follow the URL http://site.com/admin/appearance and click "Enable and set default" Aqua theme</li>
+	<li>
+		Folow the URL http://site.com/admin/config/development/performance and click "clear all caches"</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	follow the URL http://site.com/admin/modules#edit-modules-tabvn and enable all modules in this package</p>
+</section>
+
+
+
+<section id="site_settings">
+	<h3>Site settings</h3><hr class="notop">
+
+<ul>
+	<li>
+		<br>
+		<strong>How to configure site title, email address? </strong><br>
+		Simple follow this url: http://your-domain.com/admin/config/system/site-information</li>
+	<li>
+		<strong>How to change logo ? </strong><br>
+		follow this url: http://your-domain.com/admin/appearance/settings/aqua&nbsp; and uncheck &quot;Use the default logo&quot; checkbox and upload your logo</li>
+	<li>
+		<strong>How to change shotcut icon ? </strong><br>
+		Same with change logo you will follow this url: http://your-domain.com/admin/appearance/settings/aqua and uncheck &quot;Use the default shortcut icon&quot; and upload with your shotcut icon (your shotcut icon should be PNG, ico, or JPG)</li>
+	<li>
+		<strong>How to edit contact map</strong><br>
+		follow the URL http://your-domain.com/contact and hover on map block you will see setting icon apear.<br>
+		<br>
+		<img alt="" src="assets/images/image_9.png"><br>
+		&nbsp;</li>
+	<li>
+		<strong>How do i configure socials icon ? </strong><br>
+		<br>
+		Follow the URL http://your-site.com/admin/appearance/settings/aqua<br>
+		and see &quot;Social links settings&quot;<br>
+		<img alt="" src="assets/images/image_4.png"></li>
+	<li>
+		<strong>How to set a special page to Front page</strong> ?<br>
+		<br>
+		follow the URL http://your-site.com/admin/config/system/site-information see &quot;Default front page&quot; you need enter url alias ex: blog or node/1<br>
+		<br>
+		<img alt="" src="assets/images/image_8.png"></li>
+	<li>
+		<strong>How do i setup Front page for Existing Drupal Installation?</strong>
+		<ol>
+			<li>
+				Follow the URL http://your-site.com/admin/modules and enable module name is &quot;Custom&quot; under &quot;Tabvn&quot; package</li>
+			<li>
+				Follow the URL http://your-site.com/admin/structure/block/manage/custom/recent_projects/configure&nbsp; select &quot;hightlighted&quot; at &quot;Aqua (default theme)&quot; field, and&nbsp; see screenshot for more information<br>
+				<img alt="" src="assets/images/image_2.png"><br>
+				&nbsp;</li>
+			<li>
+				Follow The URL http://your-site.com/admin/structure/block/add and add this content to body of block.<br>
+				<br>
+				<textarea style="width: 100%; height: 100px;">&lt;div class=&quot;row section_featured_texts&quot;&gt; &lt;div class=&quot;column one-third&quot;&gt; &lt;span class=&quot;icon big_screen&quot;&gt;&lt;/span&gt; &lt;h3&gt;Clean &amp; Modern Design&lt;/h3&gt; &lt;p&gt;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column one-third&quot;&gt; &lt;span class=&quot;icon big_cog&quot;&gt;&lt;/span&gt; &lt;h3&gt;Easy Customization&lt;/h3&gt; &lt;p&gt;Whenever you find yourself on the side of the majority, it is time to pause and reflect.&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;column one-third&quot;&gt; &lt;span class=&quot;icon big_profile&quot;&gt;&lt;/span&gt; &lt;h3&gt;Responsive Design&lt;/h3&gt; &lt;p&gt;I am so clever that sometimes I don&#39;t understand a single word of what I am saying.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</textarea><br>
+				select region is &quot;hightlighed&quot;<br>
+				<br>
+				see screenshot image<br>
+				<img alt="" src="assets/images/image_5.png"><br>
+				<br>
+				<br>
+				<br>
+				End in &quot;visibilible&quot; settings see screenshot&nbsp;<br>
+				<br>
+				<img alt="" src="assets/images/image_6.png"><br>
+				<br>
+				<br>
+				&nbsp;</li>
+			<li>
+				Follow the URL http://your-site.com/node/page<br>
+				<br>
+				enter page title ex: home page<br>
+				body Field enter this code<br>
+				<br>
+				<br>
+				&nbsp;</li>
+		</ol>
+	</li>
+</ul>
+<h3>
+	&nbsp;</h3>
+</section>
+<section id="configure_menus">
+	<h3>Configure menus</h3><hr class="notop">
+<p>
+	To configure, adding menu, or menu item follow this URL</p>
+<p>
+	http://your site.com/admin/structure/menu</p>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_7.png"></p>
+<h3>
+	&nbsp;</h3>
+</section>
+<section id="configure_blocks">
+	<h3>Configure blocks</h3><hr class="notop">
+<section id="configure_blocks">
+<p>
+	From top navigation click on &quot;Structure&quot; -&gt;&quot;Blocks&quot;</p>
+<p>
+	To add more block click on &quot;Add block&quot; and can assign to you desire region.</p>
+<p>
+	, To configure block click on &quot;Configure&quot;</p>
+<p>
+	and a simple way to configure the block on your website , mouse hover on each block on the website you will see link to configure that block</p>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_1.png"></p>
+</section>
+<h3>
+	&nbsp;</h3>
+</section>
+<section id="configure_slider">
+	<h3>Configure slider</h3><hr class="notop">
+<p class="info">
+	<strong>If you have exits drupal installation</strong>:<br>
+	1/ you need copy module &quot;layer_slider&quot; under downloads package &quot;For exits drupal installation/Modules/layer_slider&quot; and place to &quot;/sites/all/modules/*&quot;<br>
+	2/ Then follow the URL http://your-site.com/admin/modules and enable &quot;layer_slider module&quot;<br>
+	3/ If you see missing &quot;imce&quot; and &quot;jquery_update&quot; so you need download from here http://drupal.org/project/imce and http://drupal.org/project/jquery_update copy these modules to /sites/all/modules/*<br>
+	4/ Follow the URL http://your-site.com/admin/config/development/jquery_update and switch jquery version to 1.7</p>
+<ul>
+	<li>
+		Mange all sliders by follow the URL http://your-site.com/admin/layerslider<br>
+		<p>
+			Here is sample of slider i have created and you can use this code and import &quot;Import sliders&quot;</p>
+		<textarea cols="8" rows="10" style="width: 100%;">W3sicHJvcGVydGllcyI6eyJ0aXRsZSI6ImRlbW8iLCJ3aWR0aCI6IjEwMCUiLCJoZWlnaHQiOiI0MDAiLCJyZXNwb25zaXZlIjoib24iLCJyZXNwb25zaXZldW5kZXIiOiI5NDAiLCJzdWJsYXllcmNvbnRhaW5lciI6Ijk0MCIsImF1dG9zdGFydCI6Im9uIiwicGF1c2VvbmhvdmVyIjoib24iLCJmaXJzdGxheWVyIjoiMSIsImFuaW1hdGVmaXJzdGxheWVyIjoib24iLCJ0d293YXlzbGlkZXNob3ciOiJvbiIsImxvb3BzIjoiMCIsImZvcmNlbG9vcG51bSI6Im9uIiwiYXV0b3BsYXl2aWRlb3MiOiJvbiIsImF1dG9wYXVzZXNsaWRlc2hvdyI6ImF1dG8iLCJ5b3V0dWJlcHJldmlldyI6Im1heHJlc2RlZmF1bHQuanBnIiwia2V5Ym5hdiI6Im9uIiwidG91Y2huYXYiOiJvbiIsInNraW4iOiJhcXVhIiwiYmFja2dyb3VuZGNvbG9yIjoiI0ZGRiIsImJhY2tncm91bmRpbWFnZSI6IiIsInNsaWRlcnN0eWxlIjoiIiwibmF2cHJldm5leHQiOiJvbiIsIm5hdnN0YXJ0c3RvcCI6Im9uIiwibmF2YnV0dG9ucyI6Im9uIiwiaG92ZXJwcmV2bmV4dCI6Im9uIiwidGh1bWJfbmF2IjoiaG92ZXIiLCJ0aHVtYl93aWR0aCI6IjEwMCIsInRodW1iX2hlaWdodCI6IjYwIiwidGh1bWJfY29udGFpbmVyX3dpZHRoIjoiNjAlIiwidGh1bWJfYWN0aXZlX29wYWNpdHkiOiIzNSIsInRodW1iX2luYWN0aXZlX29wYWNpdHkiOiIxMDAiLCJpbWdwcmVsb2FkIjoib24iLCJyZWxhdGl2ZXVybHMiOiJvbiIsInlvdXJsb2dvIjoiIiwieW91cmxvZ29zdHlsZSI6ImxlZnQ6IDEwcHg7IHRvcDogMTBweDsiLCJ5b3VybG9nb2xpbmsiOiIiLCJ5b3VybG9nb3RhcmdldCI6Il9zZWxmIiwiY2Jpbml0IjoiZnVuY3Rpb24oZWxlbWVudCkgeyB9IiwiY2JzdGFydCI6ImZ1bmN0aW9uKGRhdGEpIHsgfSIsImNic3RvcCI6ImZ1bmN0aW9uKGRhdGEpIHsgfSIsImNicGF1c2UiOiJmdW5jdGlvbihkYXRhKSB7IH0iLCJjYmFuaW1zdGFydCI6ImZ1bmN0aW9uKGRhdGEpIHsgfSIsImNiYW5pbXN0b3AiOiJmdW5jdGlvbihkYXRhKSB7IH0iLCJjYnByZXYiOiJmdW5jdGlvbihkYXRhKSB7IH0iLCJjYm5leHQiOiJmdW5jdGlvbihkYXRhKSB7IH0ifSwibGF5ZXJzIjpbeyJwcm9wZXJ0aWVzIjp7ImJhY2tncm91bmQiOiJcL3NpdGVzXC9hbGxcL3RoZW1lc1wvYXF1YVwvaW1hZ2VzXC8xLmpwZyIsInNsaWRlZGlyZWN0aW9uIjoicmlnaHQiLCJzbGlkZWRlbGF5IjoiNDAwMCIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRFeHBvIiwiZGVsYXlpbiI6IjAiLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlT3V0RXhwbyIsImRlbGF5b3V0IjoiMCIsImlkIjoiIiwiZGVlcGxpbmsiOiIiLCJ0aHVtYm5haWwiOiIifSwic3VibGF5ZXJzIjpbeyJzdWJ0aXRsZSI6IlN1YmxheWVyICMxIiwidHlwZSI6ImltZyIsImltYWdlIjoiXC9zaXRlc1wvYWxsXC90aGVtZXNcL2FxdWFcL2ltYWdlc1wvMV8xLnBuZyIsImh0bWwiOiIiLCJzbGlkZWRpcmVjdGlvbiI6ImJvdHRvbSIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIxMDAwIiwic2xpZGVvdXRkaXJlY3Rpb24iOiJ0b3AiLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6IjBweCIsImxlZnQiOiIyOTNweCIsInN0eWxlIjoiIiwiaWQiOiIiLCJjbGFzcyI6IiIsInRpdGxlIjoiIiwiYWx0IjoiIn0seyJzdWJ0aXRsZSI6IkNsZWFuIERlc2lnbiIsInR5cGUiOiJoMiIsImltYWdlIjoiIiwiaHRtbCI6IkNsZWFuIERlc2lnbiIsInNsaWRlZGlyZWN0aW9uIjoiYm90dG9tIiwiZHVyYXRpb25pbiI6IjE1MDAiLCJlYXNpbmdpbiI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlpbiI6IjE2MDAiLCJzbGlkZW91dGRpcmVjdGlvbiI6InRvcCIsImR1cmF0aW9ub3V0IjoiMTUwMCIsImVhc2luZ291dCI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlvdXQiOiIwIiwibGV2ZWwiOiIyIiwic2hvd3VudGlsIjoiMCIsInVybCI6IiIsInRhcmdldCI6Il9zZWxmIiwidG9wIjoiODRweCIsImxlZnQiOiI2NHB4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifSx7InN1YnRpdGxlIjoiQ2xlYXIgTWVzc2FnZSIsInR5cGUiOiJoMyIsImltYWdlIjoiIiwiaHRtbCI6IkNsZWFyIE1lc3NhZ2UiLCJzbGlkZWRpcmVjdGlvbiI6ImJvdHRvbSIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIxNzAwIiwic2xpZGVvdXRkaXJlY3Rpb24iOiJ0b3AiLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6IjE0MHB4IiwibGVmdCI6IjY0cHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9LHsic3VidGl0bGUiOiJ0ZXh0IG1lc3NhZ2UiLCJ0eXBlIjoicCIsImltYWdlIjoiIiwiaHRtbCI6IkltcGVyZmVjdGlvbiBpcyBiZWF1dHksIG1hZG5lc3MgaXM8YnIgXC8+IGdlbml1cyBhbmQgaXQncyBiZXR0ZXIgdG8gYmUgYWJzb2x1dGVseSA8YnIgXC8+cmlkaWN1bG91cyB0aGFuIGFic29sdXRlbHkgYm9yaW5nIiwic2xpZGVkaXJlY3Rpb24iOiJib3R0b20iLCJkdXJhdGlvbmluIjoiMTUwMCIsImVhc2luZ2luIjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheWluIjoiMTkwMCIsInNsaWRlb3V0ZGlyZWN0aW9uIjoidG9wIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJsZXZlbCI6IjIiLCJzaG93dW50aWwiOiIwIiwidXJsIjoiIiwidGFyZ2V0IjoiX3NlbGYiLCJ0b3AiOiIxOTJweCIsImxlZnQiOiI2NHB4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifSx7InN1YnRpdGxlIjoiTGluayIsInR5cGUiOiJwIiwiaW1hZ2UiOiIiLCJodG1sIjoiPGEgaHJlZj1cIiNcIj5WaWV3IFNlcnZpY2VzIFx1MDBiYjxcL2E+Iiwic2xpZGVkaXJlY3Rpb24iOiJib3R0b20iLCJkdXJhdGlvbmluIjoiMTUwMCIsImVhc2luZ2luIjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheWluIjoiMjAwMCIsInNsaWRlb3V0ZGlyZWN0aW9uIjoidG9wIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJsZXZlbCI6IjIiLCJzaG93dW50aWwiOiIwIiwidXJsIjoiIiwidGFyZ2V0IjoiX3NlbGYiLCJ0b3AiOiIyODZweCIsImxlZnQiOiI2NHB4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifV19LHsicHJvcGVydGllcyI6eyJiYWNrZ3JvdW5kIjoiXC9zaXRlc1wvYWxsXC90aGVtZXNcL2FxdWFcL2ltYWdlc1wvMi5qcGciLCJzbGlkZWRpcmVjdGlvbiI6InRvcCIsInNsaWRlZGVsYXkiOiI0MDAwIiwiZHVyYXRpb25pbiI6IjE1MDAiLCJlYXNpbmdpbiI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlpbiI6IjAiLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImlkIjoiIiwiZGVlcGxpbmsiOiIiLCJ0aHVtYm5haWwiOiIifSwic3VibGF5ZXJzIjpbeyJzdWJ0aXRsZSI6IlN1YmxheWVyICMxIiwidHlwZSI6ImltZyIsImltYWdlIjoiXC9zaXRlc1wvYWxsXC90aGVtZXNcL2FxdWFcL2ltYWdlc1wvMl8yLnBuZyIsImh0bWwiOiIiLCJzbGlkZWRpcmVjdGlvbiI6ImxlZnQiLCJkdXJhdGlvbmluIjoiMTUwMCIsImVhc2luZ2luIjoiZWFzZU91dEV4cG8iLCJkZWxheWluIjoiMTAwMCIsInNsaWRlb3V0ZGlyZWN0aW9uIjoidG9wIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluRXhwbyIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6IjBweCIsImxlZnQiOiIyNDRweCIsInN0eWxlIjoiIiwiaWQiOiIiLCJjbGFzcyI6IiIsInRpdGxlIjoiIiwiYWx0IjoiIn0seyJzdWJ0aXRsZSI6IlNsaWNrICYgU21hcnQiLCJ0eXBlIjoiaDIiLCJpbWFnZSI6IiIsImh0bWwiOiJTbGljayAmIFNtYXJ0Iiwic2xpZGVkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25pbiI6IjE1MDAiLCJlYXNpbmdpbiI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlpbiI6IjAiLCJzbGlkZW91dGRpcmVjdGlvbiI6ImF1dG8iLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6Ijc5cHgiLCJsZWZ0IjoiNTlweCIsInN0eWxlIjoiIiwiaWQiOiIiLCJjbGFzcyI6IiIsInRpdGxlIjoiIiwiYWx0IjoiIn0seyJzdWJ0aXRsZSI6IlJpY2ggQWRtaW4gT3B0aW9ucyIsInR5cGUiOiJoMyIsImltYWdlIjoiIiwiaHRtbCI6IlJpY2ggQWRtaW4gT3B0aW9ucyIsInNsaWRlZGlyZWN0aW9uIjoiYXV0byIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIwIiwic2xpZGVvdXRkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJsZXZlbCI6IjIiLCJzaG93dW50aWwiOiIwIiwidXJsIjoiIiwidGFyZ2V0IjoiX3NlbGYiLCJ0b3AiOiIxNDVweCIsImxlZnQiOiI2MnB4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifSx7InN1YnRpdGxlIjoiVGV4dCBtZXNzYWdlIiwidHlwZSI6InAiLCJpbWFnZSI6IiIsImh0bWwiOiJGYW50YXN5IGlzIGEgbmVjZXNzYXJ5IGluZ3JlZGllbnQgaW4gPGJyIFwvPmxpdmluZyEgSW1hZ2luYXRpb24gaXMgbW9yZSBpbXBvcnRhbnQ8YnIgXC8+IHRoYW4ga25vd2xlZGdlLiBLbm93bGVkZ2UgaXMgbGltaXRlZC4iLCJzbGlkZWRpcmVjdGlvbiI6ImF1dG8iLCJkdXJhdGlvbmluIjoiMTUwMCIsImVhc2luZ2luIjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheWluIjoiMCIsInNsaWRlb3V0ZGlyZWN0aW9uIjoiYXV0byIsImR1cmF0aW9ub3V0IjoiMTUwMCIsImVhc2luZ291dCI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlvdXQiOiIwIiwibGV2ZWwiOiIyIiwic2hvd3VudGlsIjoiMCIsInVybCI6IiIsInRhcmdldCI6Il9zZWxmIiwidG9wIjoiMjA3cHgiLCJsZWZ0IjoiNjRweCIsInN0eWxlIjoiIiwiaWQiOiIiLCJjbGFzcyI6IiIsInRpdGxlIjoiIiwiYWx0IjoiIn0seyJzdWJ0aXRsZSI6IkxpbmsiLCJ0eXBlIjoicCIsImltYWdlIjoiIiwiaHRtbCI6IjxhIGhyZWY9XCIjXCIgY2xhc3M9XCJsaW5rXCI+Q2xpY2sgaGVyZSBcdTAwYmI8XC9hPiIsInNsaWRlZGlyZWN0aW9uIjoiYXV0byIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIwIiwic2xpZGVvdXRkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJsZXZlbCI6IjIiLCJzaG93dW50aWwiOiIwIiwidXJsIjoiIiwidGFyZ2V0IjoiX3NlbGYiLCJ0b3AiOiIzMTdweCIsImxlZnQiOiI2N3B4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifV19LHsicHJvcGVydGllcyI6eyJiYWNrZ3JvdW5kIjoiIiwic2xpZGVkaXJlY3Rpb24iOiJib3R0b20iLCJzbGlkZWRlbGF5IjoiNDAwMCIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIwIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJpZCI6IiIsImRlZXBsaW5rIjoiIiwidGh1bWJuYWlsIjoiIn0sInN1YmxheWVycyI6W3sic3VidGl0bGUiOiJTdWJsYXllciAjMSIsInR5cGUiOiJpbWciLCJpbWFnZSI6Ilwvc2l0ZXNcL2FsbFwvdGhlbWVzXC9hcXVhXC9pbWFnZXNcLzMuanBnIiwiaHRtbCI6IiIsInNsaWRlZGlyZWN0aW9uIjoicmlnaHQiLCJkdXJhdGlvbmluIjoiMTUwMCIsImVhc2luZ2luIjoiZWFzZU91dEV4cG8iLCJkZWxheWluIjoiMTAwMCIsInNsaWRlb3V0ZGlyZWN0aW9uIjoidG9wIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluRXhwbyIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6Ii0xcHgiLCJsZWZ0IjoiMjQ3cHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9LHsic3VidGl0bGUiOiJXaGl0ZSBhaW4ndCBiYWQiLCJ0eXBlIjoiaDIiLCJpbWFnZSI6IiIsImh0bWwiOiJXaGl0ZSBhaW4ndCBiYWQiLCJzbGlkZWRpcmVjdGlvbiI6ImF1dG8iLCJkdXJhdGlvbmluIjoiMTUwMCIsImVhc2luZ2luIjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheWluIjoiMCIsInNsaWRlb3V0ZGlyZWN0aW9uIjoiYXV0byIsImR1cmF0aW9ub3V0IjoiMTUwMCIsImVhc2luZ291dCI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlvdXQiOiIwIiwibGV2ZWwiOiIyIiwic2hvd3VudGlsIjoiMCIsInVybCI6IiIsInRhcmdldCI6Il9zZWxmIiwidG9wIjoiNzlweCIsImxlZnQiOiI1OXB4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifSx7InN1YnRpdGxlIjoiRnVsbHkgQ3VzdG9taXphYmxlIiwidHlwZSI6ImgzIiwiaW1hZ2UiOiIiLCJodG1sIjoiRnVsbHkgQ3VzdG9taXphYmxlIiwic2xpZGVkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25pbiI6IjE1MDAiLCJlYXNpbmdpbiI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlpbiI6IjAiLCJzbGlkZW91dGRpcmVjdGlvbiI6ImF1dG8iLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6IjE0NXB4IiwibGVmdCI6IjYycHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9LHsic3VidGl0bGUiOiJUZXh0IG1lc3NhZ2UiLCJ0eXBlIjoicCIsImltYWdlIjoiIiwiaHRtbCI6IkZhbnRhc3kgaXMgYSBuZWNlc3NhcnkgaW5ncmVkaWVudCBpbiA8YnIgXC8+bGl2aW5nISBJbWFnaW5hdGlvbiBpcyBtb3JlIGltcG9ydGFudDxiciBcLz4gdGhhbiBrbm93bGVkZ2UuIEtub3dsZWRnZSBpcyBsaW1pdGVkLiIsInNsaWRlZGlyZWN0aW9uIjoiYXV0byIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIwIiwic2xpZGVvdXRkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJsZXZlbCI6IjIiLCJzaG93dW50aWwiOiIwIiwidXJsIjoiIiwidGFyZ2V0IjoiX3NlbGYiLCJ0b3AiOiIyMDdweCIsImxlZnQiOiI2NHB4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifSx7InN1YnRpdGxlIjoiTGluayIsInR5cGUiOiJwIiwiaW1hZ2UiOiIiLCJodG1sIjoiPGEgaHJlZj1cIiNcIiBjbGFzcz1cImxpbmtcIj5SZWFkIE91ciBCbG9nIFx1MDBiYjxcL2E+Iiwic2xpZGVkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25pbiI6IjE1MDAiLCJlYXNpbmdpbiI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlpbiI6IjAiLCJzbGlkZW91dGRpcmVjdGlvbiI6ImF1dG8iLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6IjMxN3B4IiwibGVmdCI6IjY3cHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9XX0seyJwcm9wZXJ0aWVzIjp7ImJhY2tncm91bmQiOiJcL3NpdGVzXC9hbGxcL3RoZW1lc1wvYXF1YVwvaW1hZ2VzXC8yLmpwZyIsInNsaWRlZGlyZWN0aW9uIjoicmlnaHQiLCJzbGlkZWRlbGF5IjoiNDAwMCIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIwIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJpZCI6IiIsImRlZXBsaW5rIjoiIiwidGh1bWJuYWlsIjoiIn0sInN1YmxheWVycyI6W3sic3VidGl0bGUiOiJWaWRlbyBlbWJlZCIsInR5cGUiOiJkaXYiLCJpbWFnZSI6IiIsImh0bWwiOiI8aWZyYW1lIHNyYz0naHR0cDpcL1wvcGxheWVyLnZpbWVvLmNvbVwvdmlkZW9cLzUxMjMyNTQ5P3RpdGxlPTAmYnlsaW5lPTAmcG9ydHJhaXQ9MCcgd2lkdGg9JzQ1MCcgaGVpZ2h0PScyNTAnIHN0eWxlPSd3aWR0aDo0NTBweDtoZWlnaHQ6MjUwcHg7Jz48XC9pZnJhbWU+Iiwic2xpZGVkaXJlY3Rpb24iOiJib3R0b20iLCJkdXJhdGlvbmluIjoiMTUwMCIsImVhc2luZ2luIjoiZWFzZU91dEV4cG8iLCJkZWxheWluIjoiMTAwMCIsInNsaWRlb3V0ZGlyZWN0aW9uIjoidG9wIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluRXhwbyIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6Ijg0cHgiLCJsZWZ0IjoiNDE0cHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9LHsic3VidGl0bGUiOiJPdXIgVmlkZW9zIiwidHlwZSI6ImgyIiwiaW1hZ2UiOiIiLCJodG1sIjoiT3VyIHZpZGVvcyIsInNsaWRlZGlyZWN0aW9uIjoiYXV0byIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIwIiwic2xpZGVvdXRkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJsZXZlbCI6IjIiLCJzaG93dW50aWwiOiIwIiwidXJsIjoiIiwidGFyZ2V0IjoiX3NlbGYiLCJ0b3AiOiI3OXB4IiwibGVmdCI6IjU5cHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9LHsic3VidGl0bGUiOiJFYXN5IGFkZCB2aWRlbyIsInR5cGUiOiJoMyIsImltYWdlIjoiIiwiaHRtbCI6IkVhc3kgYWRkIHZpZGVvIiwic2xpZGVkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25pbiI6IjE1MDAiLCJlYXNpbmdpbiI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlpbiI6IjAiLCJzbGlkZW91dGRpcmVjdGlvbiI6ImF1dG8iLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6IjE0NXB4IiwibGVmdCI6IjYycHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9LHsic3VidGl0bGUiOiJUZXh0IG1lc3NhZ2UiLCJ0eXBlIjoicCIsImltYWdlIjoiIiwiaHRtbCI6IkZhbnRhc3kgaXMgYSBuZWNlc3NhcnkgaW5ncmVkaWVudCBpbiA8YnIgXC8+bGl2aW5nISBJbWFnaW5hdGlvbiBpcyBtb3JlIGltcG9ydGFudDxiciBcLz4gdGhhbiBrbm93bGVkZ2UuIEtub3dsZWRnZSBpcyBsaW1pdGVkLiIsInNsaWRlZGlyZWN0aW9uIjoiYXV0byIsImR1cmF0aW9uaW4iOiIxNTAwIiwiZWFzaW5naW4iOiJlYXNlSW5PdXRRdWludCIsImRlbGF5aW4iOiIwIiwic2xpZGVvdXRkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25vdXQiOiIxNTAwIiwiZWFzaW5nb3V0IjoiZWFzZUluT3V0UXVpbnQiLCJkZWxheW91dCI6IjAiLCJsZXZlbCI6IjIiLCJzaG93dW50aWwiOiIwIiwidXJsIjoiIiwidGFyZ2V0IjoiX3NlbGYiLCJ0b3AiOiIyMDdweCIsImxlZnQiOiI2NHB4Iiwic3R5bGUiOiIiLCJpZCI6IiIsImNsYXNzIjoiIiwidGl0bGUiOiIiLCJhbHQiOiIifSx7InN1YnRpdGxlIjoiTGluayIsInR5cGUiOiJwIiwiaW1hZ2UiOiIiLCJodG1sIjoiPGEgaHJlZj1cIiNcIiBjbGFzcz1cImxpbmtcIj5DbGljayBoZXJlIFx1MDBiYjxcL2E+Iiwic2xpZGVkaXJlY3Rpb24iOiJhdXRvIiwiZHVyYXRpb25pbiI6IjE1MDAiLCJlYXNpbmdpbiI6ImVhc2VJbk91dFF1aW50IiwiZGVsYXlpbiI6IjAiLCJzbGlkZW91dGRpcmVjdGlvbiI6ImF1dG8iLCJkdXJhdGlvbm91dCI6IjE1MDAiLCJlYXNpbmdvdXQiOiJlYXNlSW5PdXRRdWludCIsImRlbGF5b3V0IjoiMCIsImxldmVsIjoiMiIsInNob3d1bnRpbCI6IjAiLCJ1cmwiOiIiLCJ0YXJnZXQiOiJfc2VsZiIsInRvcCI6IjMxN3B4IiwibGVmdCI6IjY3cHgiLCJzdHlsZSI6IiIsImlkIjoiIiwiY2xhc3MiOiIiLCJ0aXRsZSI6IiIsImFsdCI6IiJ9XX1dfV0=</textarea></li>
+	<li>
+		On layer slider manager you can click add new to add new slider, I would recommend import sample code above and see how it work, that is quick way you can learn slider manage.</li>
+	<li>
+		When you have slider added you need select slider as block and set it to region &quot;Slider&quot; by follow the URL http://your-site.com/admin/structure/block</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h4 id="configure_slider_video_tutorial_enable_layer_slider_and_import_sample">Video tutorial Enable layer slider and import sample</h4>
+<br>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/Cl-B8tbtKNU" width="420"></iframe></p>
+<h4 id="configure_slider_video_tutorial_,_add_new_slider">Video tutorial , add new slider</h4>
+<br>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/urRg_wGfwd8" width="420"></iframe></p>
+<h3>
+	&nbsp;</h3>
+</section>
+<section id="adding_blog_entry">
+	<h3>Adding blog entry</h3><hr class="notop">
+<ul>
+	<li>
+		<strong>Adding new blog entry</strong><br>
+		From top of navigation click to &quot;Content&quot; &gt; &quot; Add content&quot; &gt; &quot;Blog&quot;</li>
+	<li>
+		<strong>Configure blog tags</strong><br>
+		Follow this URL http://your-site.com/admin/structure/taxonomy/tags , add new or edit, same as configure blog categories.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_11.jpg"></p>
+<h3>
+	&nbsp;</h3>
+</section>
+<section id="add_portfolio_content">
+	<h3>Add Portfolio content</h3><hr class="notop">
+<p>
+	Follow the URL to adding new portfolio (project) content</p>
+<p>
+	http://your-domain.com/node/add/portfolio</p>
+<p>
+	&nbsp;</p>
+<p>
+	to configre portfolio categories</p>
+<p>
+	follow the URL http://your-domain.com/admin/structure/taxonomy/portfolio_categories you can edit and add new category item.</p>
+<ul>
+	<li>
+		Setting portfolio default layout ( 2 columns, 3 columns, 4 comuns)<br>
+		folow the URL http://your-domain.com/admin/appearance/settings/aqua#edit-portfolio and select &quot;Default portfolio display&quot; as default style</li>
+	<li>
+		Select &quot;Number nodes show on portfolio page&quot; if you want to show how many items on portfolio page.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_10.png"></p>
+<h3>
+	&nbsp;</h3>
+</section>
+<section id="questions">
+	<h3>Questions</h3><hr class="notop">
+<ul>
+	<li>
+		<strong>How do i login to backend ?</strong><br>
+		<br>
+		The URL to login is : http://your-domain.com/user/login<br>
+		<br>
+		username: admin Password: admin&nbsp; (remember change this password after your loged in)<br>
+		&nbsp;</li>
+	<li>
+		<strong>Why the URL http://your-domain.com/user/login it does not work ?</strong><br>
+		<br>
+		if this URL dont work, try with http://your-domain.com/?q=user/login&nbsp; this is problem by .htaccess file you maybe missing upload it to your hosting (because on some computer it is hidden file) , if you did upload it, try to check your hosting and enbable Mod Rewrite URL.</li>
+</ul>
+</section>
+<section id="thank_you">
+	<h3>Thank you</h3><hr class="notop">
+<p>
+	Once again, thank you so much for purchasing this theme. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section. </p>
+</section>
+
+	</div>
+</body>
+</html>
