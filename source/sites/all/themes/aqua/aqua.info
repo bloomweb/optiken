@@ -72,9 +72,9 @@ settings[contact_form_description] = <h2 class="title"><span>Contact Form</span>
 settings[menu_style] = dark
 settings[menu_font] = Open Sans
 settings[button_font] = Open Sans
-settings[menu_color] = #0AD1E5
+settings[menu_color] = #1CBAD7
 settings[menu_font_size] = 15px
-settings[main_color] = #0AD1E5
+settings[main_color] = #1CBAD7
 settings[title_font] = Open Sans
 settings[body_font] = Open Sans
 settings[wrapper_style] = boxed
