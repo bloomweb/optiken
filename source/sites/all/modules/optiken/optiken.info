@@ -1,0 +1,7 @@
+name = Optiken
+description = Brinda acciones/opciones especificas para la funcionalidad de optiken deseada.
+package = Optiken
+core = 7.x
+version = 7.x-0.1
+files[] = optiken.module
+files[] = css/contacto.css
