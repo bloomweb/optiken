@@ -5,10 +5,11 @@
 }
 #contact-site-form .form-item-mail {
     float: left;
+    margin-right: 26px;
     width: 30%;
 }
 #contact-site-form .form-item-subject {
-    float: right;
+    float: left;
     margin-right: 17px;
     width: 30%;
 }
