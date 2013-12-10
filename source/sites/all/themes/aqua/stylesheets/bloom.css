@@ -1,0 +1,10 @@
+.bloom-logo {
+    bottom: 15px;
+    height: 11px;
+    margin-left: 3px;
+    opacity: 0.6;
+    position: absolute;
+}
+.bloom-logo:hover {
+    opacity: 1;
+}

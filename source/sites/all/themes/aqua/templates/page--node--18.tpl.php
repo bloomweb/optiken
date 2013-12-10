@@ -228,59 +228,7 @@ if ($wrapper_style == 'full') {
     </div>
 
     <!-- Footer -->
-    <div id="footer" class="container">
-      <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-        <div class="row footer_inside">
-
-          <div class="four columns">
-            <?php print render($page['footer_firstcolumn']); ?>
-          </div>
-
-          <!--  1/4 Columns -->
-          <div class="four columns">
-            <?php print render($page['footer_secondcolumn']); ?>
-          </div>
-
-          <!-- 1/4 Columns -->
-          <div class="four columns">
-            <?php print render($page['footer_thirdcolumn']); ?>
-            <div class="clearfix"></div>
-          </div>
-
-          <!-- 1/4 Columns -->
-          <div class="four columns">
-            <?php print render($page['footer_fourthcolumn']); ?>
-          </div>
-
-        <?php endif; ?>
-
-      </div> 
-      <div class="clear"></div>
-
-      <div class="footer_btm">
-        <div class="footer_btm_inner">
-          <?php if (!empty($pintrest)): ?>
-            <a href='<?php print $pintrest; ?>' target='_blank' class='icon_pinterest' title='Pinterest'><?php print t('Pinterest'); ?></a>
-          <?php endif; ?>
-          <?php if (!empty($twitter)): ?>
-            <a href='<?php print $twitter; ?>' target='_blank' class='icon_tweet' title='Twitter'><?php print t('Twitter'); ?></a>			
-          <?php endif; ?>
-          <!--<a href="http://www.skype.com" class='icon_skype' title='Skype'>Skype</a> -->
-          <?php if (!empty($gplus)): ?>
-            <a href='<?php print $gplus; ?>' target='_blank' class='icon_google' title='Google+'><?php print t('Google'); ?>+</a>
-          <?php endif; ?>
-
-          <?php if (!empty($facebook)): ?>
-            <a href='<?php print $facebook; ?>' target='_blank' class='icon_facebook' title='Facebook'><?php print t('Facebook'); ?></a>
-          <?php endif; ?>
-
-          <?php $footer_msg = theme_get_setting('footer_copyright_message', 'aqua'); ?>
-          <?php if (!empty($footer_msg)): ?>
-            <div id="powered"><?php print $footer_msg; ?></div>
-          <?php endif; ?>
-        </div>	  
-      </div>
-    </div>
+    <?php include('elements/footer.inc'); ?>
     <!-- Footer::END -->
 
   </div>
