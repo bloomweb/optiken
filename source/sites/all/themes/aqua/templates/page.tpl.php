@@ -34,7 +34,7 @@ if ($wrapper_style == 'full') {
           <?php if (!empty($header_contact_mail) || !empty($header_contact_phone)): ?>
             <div class="header_contacts clearfix">
               <?php if (!empty($header_contact_phone)): ?>
-                <div class="header_phone"><a href="tell:<?php print $header_contact_phone; ?>"><?php print $header_contact_phone; ?></a></div>
+                <div class="header_phone"><a href="tel:<?php print $header_contact_phone; ?>"><?php print $header_contact_phone; ?></a></div>
               <?php endif; ?>
               <?php if (!empty($header_contact_mail)): ?>
                 <div class="header_mail"><a href="mailto:<?php print $header_contact_mail; ?>"><?php print $header_contact_mail; ?></a></div>
