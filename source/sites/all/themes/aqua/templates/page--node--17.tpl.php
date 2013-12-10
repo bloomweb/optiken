@@ -193,7 +193,7 @@ if ($wrapper_style == 'full') {
 			          </ul>
 		          </div>
 	          </div>-->
-	          
+
           <?php print $feed_icons; ?>
 
 

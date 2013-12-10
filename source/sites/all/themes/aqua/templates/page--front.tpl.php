@@ -188,7 +188,7 @@
 				<!-- testimonials -->
 
 				<div class="eight columns omega">
-					<?php print views_embed_view('testimonios', 'block_testimonios'); ?>
+					<?php print views_embed_view('testimonios', 'block_testimonios', 'front'); ?>
 				</div>
 
 				<!-- // testimonials -->
