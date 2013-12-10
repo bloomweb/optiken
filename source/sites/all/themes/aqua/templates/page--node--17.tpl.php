@@ -168,6 +168,8 @@ if ($wrapper_style == 'full') {
 
           <?php print render($page['content']); ?>
 
+	          <?php print views_embed_view('servicios', 'block_servicios'); ?>
+
 	          <div class="row">
 		          <div class="two-thirds column alpha">
 			          <h2 class="title"><span>Nuestra Misi&oacute;n</span></h2>

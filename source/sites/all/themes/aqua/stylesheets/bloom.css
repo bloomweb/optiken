@@ -1,10 +1,18 @@
 .bloom-logo {
     bottom: 15px;
+    display: inline;
     height: 11px;
-    margin-left: 3px;
+    left: 114px;
     opacity: 0.6;
     position: absolute;
 }
 .bloom-logo:hover {
     opacity: 1;
+}
+.row.section_featured_texts .field-content h3 {
+    /*height: 36px;*/
+}
+
+div#layerslider_1 h4 {
+    background-color: rgb(28, 186, 215);
 }

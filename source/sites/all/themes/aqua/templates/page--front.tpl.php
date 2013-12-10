@@ -147,10 +147,7 @@
 	<div id="content" class="twelve columns <?php print $sidebar_content_margin_class; ?>">
 		<?php } else { ?>
 		<div id="content" class="sixteen columns <?php print $sidebar_content_margin_class; ?>">
-			<?php } ?>
-
-
-
+		<?php } ?>
 
 			<?php if($messages): ?>
 				<div id="messages">
@@ -173,9 +170,30 @@
 
 			<?php endif; ?>
 
-			<?php //print render($page['content']); ?>
-
+			<div class="section_big_title">
+				<div class="h10 divider_bgr"></div>
+			<?php print render($page['content']); ?>
+			</div>
 			<!-- Contenido del front automatizado -->
+
+			<?php
+				//print views_embed_view('custom', 'recent_posts');
+				$block = block_load('custom', 'recent_posts');
+				$block = array($block);
+				$render_blocks = _block_render_blocks(
+					$block
+				);
+				$renderable_array = _block_get_renderable_array(
+					$render_blocks
+				);
+				$rendered_block = drupal_render(
+					$renderable_array
+				);
+				print $rendered_block;
+			?>
+
+			<?php print views_embed_view('servicios', 'block_servicios_front'); ?>
+
 			<div class="row">
 
 				<!--- tabs -->
