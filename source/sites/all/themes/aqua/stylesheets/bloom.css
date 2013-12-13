@@ -16,3 +16,24 @@
 div#layerslider_1 h4 {
     background-color: rgb(28, 186, 215);
 }
+
+div#GetResponseWrapper {
+    margin-top: -50px;
+    padding: 0;
+    position: relative;
+    right: -50px;
+}
+
+div#GetResponseWrapper * {
+    font-size: 12px;
+}
+
+div#GetResponseWrapper li {
+    float: left;
+    max-width: 120px;
+    padding: 0 18px;
+}
+
+div#GetResponseWrapper input[type=submit] {
+    max-width: 80px;
+}
